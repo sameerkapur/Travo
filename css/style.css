@@ -3385,7 +3385,6 @@ ul a:focus {
 .head-info span{
 	color:#FFF;
 	display: block;
-	text-transform: lowercase;
 }
 .head-info p{
 	color: #FFF;
