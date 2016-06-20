@@ -53,6 +53,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li><a href="contact.html">Contact </a></li>  
 							</ul>
 							<!-- script-for-menu -->
+
+		<div class="navbar-collapse collapse right" id="navigation-login">
+			<button type="button" class="btn navbar-btn btn-default btn-join"
+				data-toggle="modal" data-target="#join-modal">
+				join</button>
+			<button type="button" class="btn navbar-btn btn-default btn-border btn-login"
+				data-toggle="modal" data-target="#login-modal">login</button>
+			<button type="button" class="btn navbar-btn btn-default btn-border btn-account" style="display:none">
+				account</button>
+		</div>
+	</div>
+</div>
+
 							 <script>
 							   $( "span.menu" ).click(function() {
 								 $( "ul.cl-effect-1" ).slideToggle( 300, function() {
@@ -102,13 +115,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li>
 								<div class="head-info">
 									<h1>Travo<span>Travel for Less</span></h1>
-									<p>Amazingly Cheap One-Week Hotel Deals in the Next 60 Days</p>
+									<p>Unbelievably Cheap One-Week Hotel Deals in the Next 60 Days</p>
 								</div>
 							</li>
 							<li>
 								<div class="head-info">
 									<h1>Travo<span>Travel for Less</span></h1>
-									<p>Amazingly Cheap One-Week Hotel Deals in the Next 60 Days</p>
+									<p>Outrageously Cheap One-Week Hotel Deals in the Next 60 Days</p>
 								</div>
 							</li>
 						</ul>
@@ -199,6 +212,151 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- //container -->
 		</div>
 		<!-- //before -->
+
+
+
+
+
+
+<div class="modal fade" id="join-modal" tabindex="-1" role="dialog" aria-labelledby="join" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">
+					<strong style="color:#336699">Trago</strong> <span style="color:#cfcfcf">join</span>
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-login">
+					<div class="form-group">
+						<button class="btn btn-default btn-border btn-block" id="join-google">
+							Join with your Google account,
+						</button>
+					</div>
+					<div class="form-group text-center">
+						<span class="muted">or</span>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="join-name" placeholder="enter your name," autocomplete="off">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="join-email" placeholder="your email address," autocomplete="off">
+					</div>
+					<div class="form-group join login">
+						<input type="password" class="form-control" id="join-password" placeholder="and a password.">
+					</div>
+					<div class="form-group" id="join-password-strength" style="display:none">
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped"></div>
+						</div>
+						<p class="text-center" style="margin-top:-15px;">It would take <span id="join-password-strength-text">minutes</span> for a computer to guess your password.</p>
+					</div>
+					<div class="form-group text-center">
+						<button class="btn btn-default btn-border login" id="join-button">
+							click to create account
+						</button>
+					</div>
+				</form>
+				<p class="text-center text-muted">
+					Your privacy is our top priority - we never share your information with anyone.<br>
+					<a data-toggle="modal" data-target="#login-modal" data-dismiss="modal" data-target="#join-modal">
+						<strong>Already have an account?</strong>
+					</a>
+				</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">
+					<strong style="color:#336699">techlab</strong> <span style="color:#cfcfcf">login</span>
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-login">
+					<div class="form-group">
+						<button class="btn btn-default btn-border btn-block" id="login-google">
+							login with Google,
+						</button>
+					</div>
+					<div class="form-group text-center">or</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="login-email" placeholder="your email address" autocomplete="off">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" id="login-password" placeholder="and password.">
+					</div>
+					<div class="form-group text-center">
+						<button class="btn btn-default btn-border btn-lg" id="login-button">
+							click to login
+						</button>
+					</div>
+					<div class="form-group text-center">or</div>
+					<div class="form-group text-center">
+						<button class="btn btn-default btn-border"
+						 data-toggle="modal" data-target="#forgot-modal" data-dismiss="modal" data-target="#login-modal">
+							email yourself a new password.
+						</button>
+					</div>
+				</form>
+				<p class="text-center text-muted">
+					Your Techlab account lets you track enrollments and student progress. <a data-toggle="modal" data-target="#join-modal" data-dismiss="modal" data-target="#login-modal">
+						<strong>You can create an account in less than a minute.</strong>
+					</a>
+				</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="forgot-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">
+					<strong style="color:#336699">techlab</strong> <span style="color:#cfcfcf">recover</span>
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-login">
+					<div class="form-group">
+						<input type="text" class="form-control" id="forgot-email" placeholder="Enter your email address,">
+					</div>
+					<div class="form-group text-center">
+						<button class="btn btn-default btn-border btn-lg btn-lg" id="forgot-button">
+							click this button,
+						</button>
+					</div>
+					<div class="form-group text-center">and use the new password that was emailed to you.</div>
+				</form>
+				<p class="text-center text-muted">
+					<a data-toggle="modal" data-target="#login-modal" data-dismiss="modal" data-target="#login-modal">
+						Remember your password?
+					</a>
+				</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
 		<!-- footer -->
 		<div class="footer">
 			<!-- container -->
